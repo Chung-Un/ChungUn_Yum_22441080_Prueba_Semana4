@@ -21,7 +21,7 @@ public class Ejercicio2_Prueba {
         
         System.out.println("Ingrese su consumo mensuald de agua en litros durante los ultimos 12 meses");
         
-        for(int i=0; i<12; i++){s
+        for(int i=0; i<12; i++){
         System.out.println("Mes " + (i+1));
         consumoMensual = consumoMensual + entrada.nextDouble();
         }
