@@ -19,18 +19,20 @@ public class Ejercicio1_Prueba {
     
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        double precioProductos;
-        int cantProductos;
-        String[] nombreProductos; 
+        double precioProductos=0,total;
+        int cantProductos; 
         
         System.out.println("Ingrese la cantidad de productos que desea ingresar: ");
         cantProductos = entrada.nextInt();
         
-        for(int i=0; i<=cantProductos; i++){
-        System.out.println("Ingrese el nombre del " + (i+1) + " producto: ");
-        nombreProductos = entrada.next();
+        for(int i=1; i<=cantProductos; i++){
+        System.out.println("Ingrese el precio del " + (i+1) + " producto: ");
+        precioProductos = precioProductos + entrada.nextDouble();
                
                 }
+        
+        total = precioProductos;
+        System.out.println("El precio total de la compra es: Lps." + total);
     }
     
 }
